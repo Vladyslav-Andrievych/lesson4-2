@@ -1,35 +1,21 @@
-a:link {
+ul > li {
+  margin-bottom: 16px;
+}
+
+ul > li:first-child span {
+  background-color: red;
+  color: white;
+}
+
+ul > li:last-child span {
   background-color: black;
   color: white;
 }
 
-a:visited {
-  color: green;
-  background-color: orange;
+ul > li:nth-child(even) {
+  margin-left: 16px;
 }
 
-a:active,
-button:active {
-  border: 3px solid red;
-}
-
-a:hover {
-  font-size: 24px;
-}
-
-.some-button:disabled {
-  border: 2px dashed gray;
-}
-
-.some-button:enabled:hover {
-  background-color: gray;
-  color: white;
-}
-
-input:focus {
-  background-color: orange;
-}
-
-input[type='checkbox']:checked {
-  margin-left: 20px;
+.paragraphs p:nth-of-type(odd) {
+  background-color: grey;
 }
