@@ -1,33 +1,79 @@
-.block {
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 40px;
+  background-color: darkturquoise;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-list {
+  height: 40px;
+  margin: 0 0 0 16px;
+  padding: 0;
+  list-style: none;
+  line-height: 230%;
+}
+
+.nav-item {
+  float: left;
+  color: white;
+  margin-left: 16px;
+}
+
+.content {
+  height: 5000px;
+  background-color: beige;
+}
+
+.head {
+  background-color: aquamarine;
+  position: absolute;
   height: 200px;
+  width: 200px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  z-index: 0;
 }
 
-.block_red {
-  background-color: red;
-  float: left;
-  width: 20%;
+.ear {
+  width: 40px;
+  height: 60px;
+  background-color: brown;
 }
 
-.block_green {
-  background-color: green;
-  float: left;
-  width: 20%;
+.eye {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
 }
 
-.block_blue {
-  background-color: blue;
-  float: left;
-  width: 20%;
+.ear_left {
+  position: absolute;
+  top: -60px;
+  left: -40px;
 }
 
-.block_yellow {
-  background-color: yellow;
-  float: left;
-  width: 20%;
+.ear_right {
+  position: absolute;
+  top: -60px;
+  left: 200px;
 }
 
-.block_black {
-  background-color: black;
-  float: left;
-  width: 20%;
+.eye_left {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+.eye_right {
+  position: absolute;
+  top: 80px;
+  right: 40px;
 }
