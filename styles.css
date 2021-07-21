@@ -1,13 +1,72 @@
-div.block {
-  background-color: coral;
-  margin: 8px;
-  height: 100px;
-  width: 100px;
-  flex-shrink: 0;
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: yellow;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  background-color: green;
+  height: 40px;
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 16px;
+}
+
+.dashboard {
+  background-color: pink;
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text {
+  margin: auto;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.news {
+  background-color: grey;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news h2 {
+  margin: 16px auto;
+}
+
+.news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news ul li {
+  margin-left: 16px;
+  line-height: 40px;
 }
