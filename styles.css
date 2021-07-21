@@ -1,9 +1,6 @@
 header {
   display: flex;
-}
-
-header h1 {
-  margin: auto;
+  justify-content: center;
 }
 
 .article {
