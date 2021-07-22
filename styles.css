@@ -2,16 +2,27 @@
   box-sizing: border-box;
 }
 
-div > div {
-  width: 100px;
+.articles {
+  display: flex;
+}
+
+.articles > div {
   height: 100px;
-  background: coral;
+  width: 150px;
+  background-color: beige;
+  margin: 16px;
 }
 
-.container div:first-child {
-  display: none;
+.cropped {
+  overflow: hidden;
 }
 
-.container div:nth-child(2) {
-  visibility: hidden;
+.both-scrolls {
+  overflow: scroll;
+  cursor: all-scroll;
+}
+
+.vertical-scroll {
+  overflow: auto;
+  cursor: all-scroll;
 }
