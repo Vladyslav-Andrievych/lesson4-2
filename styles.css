@@ -2,23 +2,12 @@
   box-sizing: border-box;
 }
 
-.text {
-  display: inline-block;
-  position: relative;
-  margin: 16px;
-  border-bottom: 1px dotted black;
+.gallery {
+  display: flex;
+  cursor: all-scroll;
+  overflow-x: auto;
 }
 
-.tooltip {
-  display: none;
-  position: absolute;
-  bottom: -40px;
-  background-color: grey;
-  color: white;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.text:hover .tooltip {
-  display: block;
+.thumb {
+  margin: 8px;
 }
