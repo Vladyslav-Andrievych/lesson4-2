@@ -3,10 +3,10 @@
 }
 
 .text {
+  display: inline-block;
   position: relative;
   margin: 16px;
   border-bottom: 1px dotted black;
-  width: 97px;
 }
 
 .tooltip {
