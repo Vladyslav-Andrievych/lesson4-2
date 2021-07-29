@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-.mountains {
+.mountainss {
   width: 300px;
   height: 500px;
-  background-image: url(nature.jpeg);
+  background-image: url(images/nature.jpeg);
   background-position: center;
   background-size: cover;
   font-size: 32px;
