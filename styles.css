@@ -1,37 +1,8 @@
 * {
   box-sizing: border-box;
 }
-
-.image-container img {
+video {
+  width: 500px;
   display: block;
-  margin: 50px auto;
-  max-width: 100%;
-  border-radius: 20px;
-}
-
-.gallery {
-  display: flex;
-}
-
-.card {
-  margin: 16px;
-  box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
-}
-
-.img-opacity {
-  filter: opacity(50%);
-}
-
-.img-blur {
-  filter: blur(4px);
-}
-
-.img-invert {
-  filter: invert(100%);
-}
-
-.caption {
-  line-height: 30px;
-  text-transform: lowercase;
-  text-align: center;
+  margin: 200px auto 0;
 }
