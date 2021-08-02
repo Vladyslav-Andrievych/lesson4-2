@@ -48,7 +48,7 @@
         <input type="file" name="avatar" />
       </div>
       <div class="form-controls">
-        <input type="month" name="startLearning" value="2021-01" />
+        <input type="month" name="startLearning" value="2020-01" />
       </div>
       <div class="form-controls">
         <input type="number" name="favouriteNumber" value="17" />
@@ -62,21 +62,15 @@
         ></textarea>
       </div>
       <div class="form-controls">
-        <input type="password" value="secret" />
+        <input type="password" name="password" value="secret" />
       </div>
       <div class="languages">
-        <label>
-          <input type="radio" name="language" value="html" />
-          HTML
-        </label>
-        <label>
-          <input type="radio" name="language" value="css" checked />
-          CSS
-        </label>
-        <label>
-          <input type="radio" name="language" value="javascript" />
-          JavaScript
-        </label>
+        <input type="radio" name="language" value="html" id="lang-html" />
+        <label for="lang-html">HTML</label>
+        <input type="radio" name="language" value="css" id="lang-css" checked />
+        <label for="lang-css">CSS</label>
+        <input type="radio" name="language" value="javascript" id="lang-js" />
+        <label for="lang-js">JavaScript</label>
       </div>
       <div class="form-controls">
         <input type="range" name="learningProgress" value="30" />
