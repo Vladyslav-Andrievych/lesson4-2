@@ -1,3 +1,4 @@
-.container-for-form-element {
+.container-for-form-element,
+.choose-gender {
   margin: 16px;
 }
