@@ -22,14 +22,11 @@ th {
   border-collapse: collapse;
 }
 
-tr {
-  line-height: 31px;
-}
-
 td,
 th {
   padding: 4px;
   text-align: right;
+  line-height: 31px;
 }
 
 tbody > tr:nth-child(odd) {
