@@ -17,7 +17,8 @@ thead {
 
 table,
 td,
-th {
+th,
+tr {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -27,6 +28,10 @@ th {
   padding: 4px;
   text-align: right;
   line-height: 31px;
+}
+
+th {
+  line-height: 30px;
 }
 
 tbody > tr:nth-child(odd) {
