@@ -7,6 +7,14 @@ table {
   margin: 16px;
 }
 
+caption {
+  margin-bottom: 8px;
+}
+
+thead {
+  background-color: aqua;
+}
+
 table,
 tr,
 td,
@@ -19,4 +27,22 @@ td,
 th {
   padding: 4px;
   text-align: right;
+  line-height: 40px;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody > tr:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+tfoot {
+  font-weight: 700;
+}
+
+div {
+  overflow-x: auto;
 }
