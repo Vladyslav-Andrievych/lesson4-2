@@ -2,47 +2,23 @@
   box-sizing: border-box;
 }
 
-table {
-  width: 500px;
-  margin: 16px;
+.row {
+  display: flex;
 }
 
-caption {
-  margin-bottom: 8px;
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
 }
 
-thead {
-  background-color: aqua;
+.small-bird {
+  width: 64px;
+  height: 64px;
 }
 
-table,
-td,
-th,
-tr {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: 4px;
-  text-align: right;
-  height: 40px;
-}
-
-tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-
-tbody > tr:hover {
-  background-color: #aaa;
-  color: white;
-}
-
-tfoot {
-  font-weight: 700;
-}
-
-div {
-  overflow-x: auto;
+.large-bird {
+  width: 320px;
+  height: 320px;
 }
