@@ -2,27 +2,38 @@
   box-sizing: border-box;
 }
 
-.icons {
-  display: flex;
-  justify-content: space-around;
+.container {
+  margin: 32px;
 }
 
-.fa-battery-full {
-  font-size: 16px;
+.rect {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0.5;
 }
 
-.fa-battery-three-quarters {
-  font-size: 32px;
+.rect:hover {
+  width: 100%;
+  opacity: 1;
+  transition: width 2s, opacity 0.5s;
 }
 
-.fa-battery-half {
-  font-size: 64px;
+.linear {
+  transition-timing-function: linear;
 }
 
-.fa-battery-quarter {
-  font-size: 128px;
+.ease-in {
+  transition-timing-function: ease-in;
 }
 
-.fa-battery-empty {
-  font-size: 256px;
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
 }
