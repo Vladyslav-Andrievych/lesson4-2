@@ -2,39 +2,17 @@
   box-sizing: border-box;
 }
 
-.container,
-.block {
-  width: 250px;
+.square {
+  width: 100px;
   height: 100px;
+  background-color: tomato;
+  transform: translate(200px, 100px) rotate(45deg) scale(1.5);
 }
 
-.container {
-  margin: auto;
-  position: relative;
-}
-
-.block {
-  border-radius: 10px;
-  background-color: coral;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 100px;
-  position: absolute;
-  animation-name: move;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes move {
-  from {
-    top: -100px;
-  }
-  to {
-    top: calc(50vh - 50px);
-  }
+p {
+  margin: 0 32px;
+  padding: 8px;
+  background-color: antiquewhite;
+  display: inline-block;
+  border-radius: 4px;
 }
