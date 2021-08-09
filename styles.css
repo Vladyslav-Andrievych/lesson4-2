@@ -4,14 +4,14 @@
 
 html {
   font-family: Verdana, sans-serif;
-  font-size: 16px;
   color: #555;
+  font-size: 16px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .header {
@@ -19,8 +19,8 @@ body {
 }
 
 h1 {
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
 
 .main {
@@ -29,8 +29,14 @@ h1 {
   font-size: 1.25em;
 }
 
-ul {
+.main ul {
   line-height: 1.75em;
+}
+
+.navigation,
+.section,
+.news {
+  padding: 0.5em;
 }
 
 .navigation {
@@ -52,12 +58,12 @@ ul {
 .nav-list-link {
   display: block;
   padding: 0 0.5em;
+  height: 100%;
   text-decoration: none;
   color: #fff;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 2em;
 }
 
 .section {
