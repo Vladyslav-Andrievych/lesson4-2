@@ -26,11 +26,6 @@ h1 {
 .main {
   flex-grow: 1;
   display: flex;
-  font-size: 1.25em;
-}
-
-.main ul {
-  line-height: 1.75em;
 }
 
 .navigation,
@@ -51,14 +46,14 @@ h1 {
 .nav-list-item {
   background-color: #808080;
   color: #fff;
-  height: 2em;
-  margin-bottom: 0.5em;
+  height: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav-list-link {
   display: block;
-  padding: 0 0.5em;
-  height: 100%;
+  padding: 0 0.5rem;
+  line-height: 2rem;
   text-decoration: none;
   color: #fff;
   overflow: hidden;
@@ -68,11 +63,16 @@ h1 {
 
 .section {
   width: 60%;
+  font-size: 1.25em;
 }
 
 .section__header {
   font-size: 5vw;
   text-align: center;
+}
+
+.units-list {
+  line-height: 1.75em;
 }
 
 .css-units {
