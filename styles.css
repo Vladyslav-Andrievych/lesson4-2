@@ -50,10 +50,10 @@ span {
   }
 
   .main-content {
-    flex-basis: 67%;
+    flex-basis: calc(100vw / (1 / 3));
   }
 
   .news {
-    flex-basis: 33%;
+    flex-basis: calc(100vw / (2 / 3));
   }
 }
