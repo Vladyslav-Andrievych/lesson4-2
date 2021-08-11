@@ -20,7 +20,7 @@ body {
 .square {
   height: 100px;
   width: 100px;
-  margin: 8px;
+  margin: 16px;
   background-color: #ff7f50;
 
   @include for-medium-screen {
@@ -33,5 +33,9 @@ body {
 
   @include for-large-screen {
     background-color: #c47;
+  }
+
+  @include for-landscape {
+    margin: 8px;
   }
 }
