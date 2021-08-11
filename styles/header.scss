@@ -1,32 +1,57 @@
-@import 'variables.scss';
-
 .header {
-  background-color: $color-grey;
+  background-color: #006400;
 }
 
-.nav-list {
-  height: $unit * 7;
-  display: flex;
-  align-items: center;
+.menu {
+  margin: 0 0 0 3rem;
+  text-transform: uppercase;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  color: $text-color-secondary;
-  font-weight: 700;
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  align-items: center;
 
   &__item {
-    border-radius: $border-radius;
-    padding: $unit;
-    margin-left: $unit;
-    cursor: pointer;
-    background-color: $color-secondary;
+    padding: 0 8px;
+    height: 3rem;
 
-    &_selected {
-      background-color: $color-primary;
+    &-text {
+      line-height: 3rem;
     }
 
     &:hover {
-      opacity: 0.7;
+      background-color: #9acd32;
+    }
+
+    &_active {
+      color: yellow;
     }
   }
+}
+
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ff7f50;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  min-width: 120px;
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  display: none;
+
+  &__item {
+    padding: 0 8px;
+    height: 3rem;
+    line-height: 3rem;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.menu__item_active:hover .submenu {
+  display: block;
 }
