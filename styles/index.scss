@@ -1,11 +1,37 @@
-@import 'variables.scss';
-@import 'header.scss';
+@import 'breakpoints.scss';
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: $base-font-size;
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+
+  @include for-landscape {
+    display: flex;
+  }
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  margin: 8px;
+  background-color: #ff7f50;
+
+  @include for-medium-screen {
+    background-color: #8a2be2;
+  }
+
+  @include for-medium-up-screen {
+    background-color: #a61;
+  }
+
+  @include for-large-screen {
+    background-color: #c47;
+  }
 }

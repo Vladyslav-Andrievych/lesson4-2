@@ -1,0 +1,27 @@
+$small-screen: 600px;
+$medium-screen: 900px;
+$large-screen: 1200px;
+
+@mixin for-medium-screen {
+  @media screen and (min-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin for-medium-up-screen {
+  @media screen and (min-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin for-large-screen {
+  @media screen and (min-width: $large-screen) {
+    @content;
+  }
+}
+
+@mixin for-landscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
